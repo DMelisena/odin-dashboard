@@ -49,6 +49,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 /*}}} */
 
+:root{
+  font:
+}
+
 body{
   display:flex;
   flex-flow:column;
@@ -74,10 +78,17 @@ body{
   max-width: 40%;
   background-image:url("starstripes-red.png");
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
 
 }
 
 .side-content{
   padding:10px;
 }
+
+.logo{
+  flex:0 0;
+  aspect-ratio:1/1;
+  align-self:center;
+  padding:10%;
+ }
