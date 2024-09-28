@@ -62,3 +62,22 @@ body{
   text-align:center;
   padding:10px;
 
+
+}
+.contents{
+  flex:1;
+  display:flex;
+}
+
+.side-wall{
+  min-width: 40%;
+  max-width: 40%;
+  background-image:url("starstripes-red.png");
+  display:flex;
+  justify-content:space-between;
+
+}
+
+.side-content{
+  padding:10px;
+}
