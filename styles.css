@@ -17,6 +17,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background:grey;
+  font-size: 22px;
 }
 
 /*
@@ -54,6 +56,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body{
+  font-family:"Helvetica","Arial", sans-serif;
+  font-family: 'Brush Script MT', cursive;
   display:flex;
   flex-flow:column;
   justify-content:space-between;
@@ -79,9 +83,7 @@ body{
   display:flex;
   flex-flow:column;
   justify-content:center;
-
 }
-
 
 .logo{
   background-color:rgba(0,0,0,0.5);
@@ -98,6 +100,16 @@ body{
   flex-flow:column;
 }
 
+.title-content{
+  font-size: 45px;
+  text-align:center;
+  padding:10px;
+  font-weight:900;
+}
+
+.desc{
+  padding-bottom:20px;
+}
  .form-row{
    display:flex;
  }
