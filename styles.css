@@ -82,12 +82,6 @@ body{
 
 }
 
-.side-content{
-  padding:10px;
-  display:flex;
-  justify-content:center;
-  flex-flow:column;
-}
 
 .logo{
   background-color:rgba(0,0,0,0.5);
@@ -96,4 +90,14 @@ body{
   align-self:center;
   padding:10%;
  }
+ 
+.side-content{
+  padding:10px;
+  display:flex;
+  justify-content:center;
+  flex-flow:column;
+}
 
+ .form-row{
+   display:flex;
+ }
