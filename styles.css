@@ -84,6 +84,9 @@ body{
 
 .side-content{
   padding:10px;
+  display:flex;
+  justify-content:center;
+  flex-flow:column;
 }
 
 .logo{
