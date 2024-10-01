@@ -135,6 +135,8 @@ body{
    margin-bottom:5px;
  }
 .form-row input[type='text'],
+.form-row input[type='tel'],
+.form-row input[type='password'],
 .form-row input[type='email']{
   background-color: grey;
   border: 1px solid darkgrey;
@@ -143,3 +145,13 @@ body{
   padding: 1px;
   padding-left: 5px;
 }
+
+.form-row input[type='text']:invalid,
+.form-row input[type='tel']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  background: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+  font-weight:900;
+}
+
