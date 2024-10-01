@@ -25,40 +25,64 @@
         </div>
         <form action='' method='get' class='speaker-form''>
           <div class="form-row 1row">
-            <input  id="first-name" 
-                    name='first-name'
-                    type="text"
-                    placeholder="First Name"
-                    class="left-form"/>
-            <input  id="last-name" 
-                    name='last-name'
-                    type="text"
-                    placeholder="Last Name"
-                    class="right-form"/>
+            <div class="package">
+              <input  id="first-name" 
+                      name='first-name'
+                      type="text"
+                      placeholder="First Name"
+                      pattern="^[^0-9]+$"
+                      max-length="10"
+                      class="left-form" required/>
+              <p class="help">Please enter alphabet only</p>
+            </div>
+            <div class="package">
+              <input  id="last-name" 
+                      name='last-name'
+                      type="text"
+                      pattern="^[^0-9]+$"
+                      max-length="10"
+                      placeholder="Last Name"
+                      class="right-form" required/>
+              <p class="help">Please enter an alphabetic name</p>
+            </div>
           </div>
           <div class="form-row 2row">
-            <input  id="email" 
-                    name='email'
-                    type="email"
-                    placeholder="E-mail"
-                    class="left-form"/>
-            <input  id="phone" 
-                    name='phone'
-                    type="text"
-                    placeholder="Phone Number"
-                    class="right-form"/>
+            <div class="package">
+              <input  id="email" 
+                      name='email'
+                      type="email"
+                      placeholder="E-mail"
+                      class="left-form" required/>
+              <p class="help">Please enter alphabet only</p>
+            </div>
+            <div class="package">
+              <input  id="phone" 
+                      name='phone'
+                      type="tel"
+                      pattern='^0\d{7,}$'
+                      placeholder="Phone Number (ex:05555555)"
+                      class="right-form" required/>
+              <p class="help">Number starts with 0 and have a minimum of 8 number</p>
+            </div>
           </div>
           <div class="form-row 3row">
-            <input  id="password" 
-                    name='password'
-                    type="text"
-                    placeholder="password"
-                    class="left-form"/>
-            <input  id="repassword" 
-                    name='repassword'
-                    type="text"
-                    placeholder="confirm password"
-                    class="right-form"/>
+            <div class="package">
+              <input  id="password" 
+                      name='password'
+                      type="password"
+                      min-length="6"
+                      placeholder="password"
+                      class="left-form" required/>
+              <p class="help">enter a minimum of 6 character</p>
+            </div>
+            <div class="package">
+              <input  id="repassword" 
+                      name='repassword'
+                      type="password"
+                      placeholder="confirm password"
+                      class="right-form" required/>
+              <p class="help">enter a minimum of 6 character</p>
+            </div>
           </div>
         </form>
         <button class="createAccount">Sign Up</button>
