@@ -161,3 +161,7 @@ body{
   color:red;
 }
 
+.form-row input:invalid + .help {
+  display: block;
+}
+
