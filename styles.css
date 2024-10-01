@@ -61,7 +61,7 @@ body{
   display:flex;
   flex-flow:column;
   justify-content:space-between;
-  min-height:100vh;
+  height:100vh;
 }
 
 .footer,
@@ -82,15 +82,24 @@ body{
   background-image:url("starstripes-red.png");
   display:flex;
   flex-flow:column;
-  justify-content:center;
+  justify-content:space-between;
 }
 
 .logo{
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,0.4);
   flex:0 0;
   aspect-ratio:1/1;
-  align-self:center;
-  padding:10%;
+  display:block;
+  padding-right:15%;
+  padding-left:15%;
+  margin-right:max;
+  max-height:80vh;
+ }
+ 
+ li{
+   text-align: center;
+   color:white;
+   margin:5px;
  }
  
 .side-content{
